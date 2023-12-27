@@ -3,12 +3,12 @@ body {
     margin: 20px;
     padding: 20px;
     text-align: center;
-    background-color: #d5c5c8ff;
-    color: #604d53ff; 
+    background-color: #d5c5c8;
+    color: #604d53;
 }
 
 header {
-    background-color: #9da3a4ff;
+    background-color: #9da3a4;
     padding: 10px;
     margin: 0 auto 20px;
 }
@@ -16,7 +16,7 @@ header {
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #604d53ff;
+    color: #604d53;
 }
 
 main {
@@ -27,6 +27,6 @@ main {
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: #9da3a4ff;
+    background-color: #9da3a4;
     margin: 20px auto 0;
 }
