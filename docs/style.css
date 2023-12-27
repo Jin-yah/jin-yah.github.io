@@ -1,27 +1,22 @@
---french-gray: #d5c5c8ff;
---cadet-gray: #9da3a4ff;
---wenge: #604d53ff;
---puce: #db7f8eff;
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    background-color: var(--french-gray);
-    color: var(--wenge);
+    background-color: #d5c5c8ff; /* French Gray */
+    color: #604d53ff; /* Wenge */
 }
 
 header {
-    background-color: var(--cadet-gray);
+    background-color: #9da3a4ff; /* Cadet Gray */
     padding: 10px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Center the header horizontally */
 }
 
 nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: var(--wenge);
+    color: #604d53ff; /* Wenge */
 }
 
 main {
@@ -32,5 +27,6 @@ main {
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: var(--cadet-gray);
+    background-color: #9da3a4ff; /* Cadet Gray */
+    margin: 20px auto 0; /* Center the footer horizontally */
 }
