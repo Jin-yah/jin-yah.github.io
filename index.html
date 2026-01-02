@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanoa Jung - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+            <h1 class="name">Kanoa Jung</h1>
+            <p class="tagline">Full-Stack Engineer & iOS Developer</p>
+            <div class="contact-links">
+                <a href="tel:650-804-1501" class="contact-link">650-804-1501</a>
+                <a href="mailto:kanoajung@gmail.com" class="contact-link">kanoajung@gmail.com</a>
+                <a href="https://www.linkedin.com/in/kanoajung/" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/jin-yah" target="_blank" class="contact-link">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <p class="about-text">
+                Graduate student pursuing a Master's in Computer Science at University of Colorado, Boulder with a 3.97 GPA. 
+                Experienced in full-stack development, iOS applications, and AR technologies. Passionate about building 
+                scalable, user-centric applications with clean architecture and optimized performance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3 class="education-degree">Master of Science in Computer Science</h3>
+                    <p class="education-school">University of Colorado, Boulder</p>
+                    <p class="education-details">GPA: 3.97 | Graduating May 2026</p>
+                </div>
+                <div class="education-card">
+                    <h3 class="education-degree">Bachelor of Science in Cognitive Science</h3>
+                    <p class="education-school">University of California, San Diego</p>
+                    <p class="education-details">Graduated December 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML5/CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">ARKit</span>
+                        <span class="skill-tag">UIKit</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">iOS Developer - Contract</h3>
+                            <span class="timeline-date">Dec 2025 - Present</span>
+                        </div>
+                        <p class="timeline-company">Just For Eyes</p>
+                        <ul class="timeline-description">
+                            <li>Developed and maintained 3 native iOS applications using Swift and UIKit; implemented ARKit/SceneKit 3D games, StoreKit 2 subscriptions, and CoreData persistence with optimized performance</li>
+                            <li>Architected offline-first capabilities with local receipt validation; built custom UI components, email reporting, and reusable utilities for AR transformations maintaining 60fps rendering</li>
+                            <li>Optimized app performance across updates using async/await concurrency patterns, CALayer animations, and modular MVC architecture with protocol-oriented design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Full-Stack Engineer</h3>
+                            <span class="timeline-date">Nov 2025 - Present</span>
+                        </div>
+                        <p class="timeline-company">Fashion Social Platform (Pre-launch)</p>
+                        <ul class="timeline-description">
+                            <li>Built cross-platform mobile app end-to-end including UI, backend APIs, relational data models, authentication flows, and permission-aware states</li>
+                            <li>Implemented scalability features (pagination, list virtualization, media handling) and executed QA/regression testing, reproducing edge cases and shipping fixes</li>
+                            <li>Authored 15+ page technical design documents defining system architecture, milestones, and risk mitigation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Student Services Associate</h3>
+                            <span class="timeline-date">Dec 2022 - Apr 2024</span>
+                        </div>
+                        <p class="timeline-company">University of California, San Diego</p>
+                        <ul class="timeline-description">
+                            <li>Provided IT support and technical troubleshooting for student-facing systems, resolving hardware/software issues and ensuring point-of-service uptime</li>
+                            <li>Managed high-volume ticketing systems during orientation and registration events, triaging 100+ student requests per event</li>
+                            <li>Collaborated with cross-functional teams to escalate issues and implement system improvements based on user feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-deck">
+                <div class="project-card" data-project="exersight">
+                    <div class="project-header">
+                        <h3 class="project-title">ExerSight - AR Visual Acuity Trainer</h3>
+                        <span class="project-link-badge">Live on App Store</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">ARKit</span>
+                        <span class="tech-tag">SceneKit</span>
+                        <span class="tech-tag">CoreData</span>
+                        <span class="tech-tag">StoreKit 2</span>
+                    </div>
+                    <p class="project-summary">
+                        Native iOS app transforming eye examinations into AR-powered mini-games for optometry professionals with scientifically-calibrated game modes.
+                    </p>
+                    <button class="learn-more-btn" onclick="openModal('exersight')">Learn More</button>
+                </div>
+
+                <div class="project-card" data-project="lol-launcher">
+                    <div class="project-header">
+                        <h3 class="project-title">LoL Account Launcher</h3>
+                        <span class="project-link-badge">Open Source</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET 8</span>
+                        <span class="tech-tag">WinForms</span>
+                        <span class="tech-tag">SQLite</span>
+                    </div>
+                    <p class="project-summary">
+                        Lightweight Windows desktop application for managing multiple League of Legends accounts with one-click login and secure credential storage.
+                    </p>
+                    <button class="learn-more-btn" onclick="openModal('lol-launcher')">Learn More</button>
+                </div>
+
+                <div class="project-card" data-project="noai">
+                    <div class="project-header">
+                        <h3 class="project-title">NoAI</h3>
+                        <span class="project-link-badge">Chrome Extension</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chrome API</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    <p class="project-summary">
+                        Chrome extension that gives users control over AI-powered search results on Google with customizable blocking levels.
+                    </p>
+                    <button class="learn-more-btn" onclick="openModal('noai')">Learn More</button>
+                </div>
+
+                <div class="project-card" data-project="pngtuber">
+                    <div class="project-header">
+                        <h3 class="project-title">Lightweight PNGTuber</h3>
+                        <span class="project-link-badge">Open Source</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">PIL</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <p class="project-summary">
+                        Minimal PNGTuber application with real-time audio-reactive mouth animation, automatic blinking, and keyboard-controlled accessories and expressions.
+                    </p>
+                    <button class="learn-more-btn" onclick="openModal('pngtuber')">Learn More</button>
+                </div>
+
+                <div class="project-card" data-project="sleepi">
+                    <div class="project-header">
+                        <h3 class="project-title">SleePi-Panda</h3>
+                        <span class="project-link-badge">Open Source</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">CircuitPython</span>
+                        <span class="tech-tag">Raspberry Pi Pico W</span>
+                        <span class="tech-tag">USB HID</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                    </div>
+                    <p class="project-summary">
+                        IoT device using Raspberry Pi Pico W to keep computers awake via USB HID, featuring a web interface with an interactive sleepy panda.
+                    </p>
+                    <button class="learn-more-btn" onclick="openModal('sleepi')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Kanoa Jung. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/jin-yah" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/kanoajung/" target="_blank">LinkedIn</a>
+                <a href="mailto:kanoajung@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for ExerSight -->
+    <div id="exersight-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('exersight')">&times;</button>
+            <h2 class="modal-title">ExerSight - AR Visual Acuity Trainer</h2>
+            <div class="modal-links">
+                <a href="https://apps.apple.com/pl/app/exersight/id1626914472" target="_blank" class="modal-link">View on App Store →</a>
+            </div>
+            <div class="modal-tech">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">ARKit</span>
+                <span class="tech-tag">SceneKit</span>
+                <span class="tech-tag">CoreData</span>
+                <span class="tech-tag">StoreKit 2</span>
+                <span class="tech-tag">UIKit</span>
+            </div>
+            <div class="modal-body">
+                <h3>Overview</h3>
+                <p>
+                    Developed a native iOS application that transforms traditional eye examinations into engaging AR-powered mini-games 
+                    designed for optometry professionals. The app features scientifically-calibrated game modes using SceneKit with 
+                    physics-based mechanics to assess visual acuity, depth perception, and reaction times.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>AR-Powered Games:</strong> 3 scientifically-calibrated game modes built with SceneKit featuring physics-based mechanics for comprehensive visual assessment</li>
+                    <li><strong>Performance Tracking:</strong> CoreData-powered system tracking best times across difficulty levels with professional email reporting for patient assessment</li>
+                    <li><strong>Offline-First Premium:</strong> StoreKit 2 subscription system with local receipt validation for reliable offline access</li>
+                    <li><strong>Optimized Rendering:</strong> 60fps 3D performance on older iPhone models with complex scene graphs and particle systems</li>
+                </ul>
+
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Implemented modular Swift architecture with protocol-oriented design and MVC pattern across 33 Swift files</li>
+                    <li>Created 5 custom SceneKit scenes with advanced AR transformations and cross-thread synchronization</li>
+                    <li>Developed 15+ custom UI components with smooth animations using CALayer</li>
+                    <li>Engineered comprehensive data model with local persistence and email export functionality</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <p>
+                    Delivered a complete production app that bridges the gap between clinical eye examinations and engaging 
+                    gamification, providing optometry professionals with a modern tool for patient assessment while maintaining 
+                    scientific accuracy and optimal performance.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for LoL Launcher -->
+    <div id="lol-launcher-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('lol-launcher')">&times;</button>
+            <h2 class="modal-title">LoL Account Launcher</h2>
+            <div class="modal-links">
+                <a href="https://github.com/jin-yah/LoLAccountLauncher" target="_blank" class="modal-link">View on GitHub →</a>
+            </div>
+            <div class="modal-tech">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">.NET 8</span>
+                <span class="tech-tag">WinForms</span>
+                <span class="tech-tag">SQLite</span>
+                <span class="tech-tag">Windows Credential Manager</span>
+            </div>
+            <div class="modal-body">
+                <h3>Overview</h3>
+                <p>
+                    Built a lightweight Windows desktop application that streamlines the management of multiple League of Legends 
+                    accounts with secure credential storage and one-click login functionality. The application prioritizes security 
+                    by utilizing Windows Credential Manager for password storage while maintaining username metadata in a local SQLite database.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Secure Credential Management:</strong> Integration with Windows Credential Manager API for encrypted password storage, separate from local database</li>
+                    <li><strong>One-Click Login:</strong> Automated login flow that bypasses manual credential entry for quick account switching</li>
+                    <li><strong>Intuitive UI:</strong> WinForms interface with drag-and-drop account reordering and hover-triggered controls</li>
+                    <li><strong>Easy Deployment:</strong> Self-contained executable with embedded .NET 8 runtime and Inno Setup installer</li>
+                </ul>
+
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Implemented secure credential architecture separating passwords (Windows Credential Manager) from metadata (SQLite)</li>
+                    <li>Developed custom WinForms controls with drag-and-drop functionality and dynamic UI updates</li>
+                    <li>Enhanced Windows integration with application manifests for improved antivirus compatibility</li>
+                    <li>Created comprehensive installer with automatic updates, start menu integration, and clean uninstallation</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <p>
+                    Provides a practical solution for gamers managing multiple accounts, eliminating repetitive login workflows 
+                    while maintaining security best practices through Windows-native credential storage.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for NoAI -->
+    <div id="noai-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('noai')">&times;</button>
+            <h2 class="modal-title">NoAI</h2>
+            <div class="modal-links">
+                <a href="https://github.com/jin-yah/NoAI" target="_blank" class="modal-link">View on GitHub →</a>
+            </div>
+            <div class="modal-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Chrome Extensions API</span>
+                <span class="tech-tag">MutationObserver</span>
+                <span class="tech-tag">webNavigation API</span>
+                <span class="tech-tag">Storage API</span>
+            </div>
+            <div class="modal-body">
+                <h3>Overview</h3>
+                <p>
+                    A Chrome extension that gives users control over AI-powered search results on Google. 
+                    NoAI provides flexible options to either hide or completely block Google's AI-generated content, allowing users 
+                    to customize their search experience according to their preferences.
+                </p>
+
+                <h3>Blocker Levels</h3>
+                <ul>
+                    <li><strong>Off:</strong> Extension is disabled and does not affect search results</li>
+                    <li><strong>Hidden (Default):</strong> Hides AI-powered search results from the page without modifying queries; uses DOM monitoring to detect and hide AI overviews in real-time</li>
+                    <li><strong>Blocked:</strong> Appends <code>-noai</code> to search queries and hides AI results; provides comprehensive blocking though search results may be slightly affected</li>
+                </ul>
+
+                <h3>Technical Implementation</h3>
+                <ul>
+                    <li><strong>MutationObserver Pattern:</strong> Implemented real-time DOM monitoring to detect and hide AI overview elements as they appear; observes document changes with childList and subtree options for comprehensive coverage</li>
+                    <li><strong>Multi-Language Support:</strong> Pattern matching for AI overview headers across 9+ languages including English, German, Japanese, Russian, Chinese, Dutch, Spanish, and Czech</li>
+                    <li><strong>Query Modification & UI Cleaning:</strong> Automated URL manipulation to append <code>-noai</code> suffix with sophisticated cleanup logic that removes the suffix from search box, address bar, document title, and suggestion dropdowns</li>
+                    <li><strong>Flicker Prevention:</strong> Page visibility control with <code>document.documentElement.style.visibility</code> during redirects and bfcache restoration handling to ensure smooth user experience</li>
+                    <li><strong>Cross-Device Sync:</strong> Dual storage architecture using chrome.storage.local for device-specific settings and chrome.storage.sync for blocked count synchronization across devices with periodic alarm-based syncing</li>
+                    <li><strong>Smart Tracking:</strong> Local buffering of blocked count with periodic sync to cloud storage; increments on both webNavigation events and successful DOM hiding operations</li>
+                    <li><strong>Navigation Detection:</strong> chrome.webNavigation.onCompleted listener with URL filters for Google search pages (hostContains + pathPrefix pattern matching)</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Slider-based popup UI for intuitive level selection with dynamic descriptions and real-time blocked count display</li>
+                    <li>Comprehensive AI content blocking including main search results and "People Also Ask" section AI entries</li>
+                    <li>Persistent settings with automatic restoration on browser restart</li>
+                    <li>Minimal permissions footprint (storage, webNavigation only)</li>
+                    <li>Efficient implementation with negligible performance impact</li>
+                    <li>Cross-device blocked count tracking and synchronization</li>
+                </ul>
+
+                <h3>Technical Challenges Solved</h3>
+                <ul>
+                    <li>Handled race conditions between query modification and page rendering to prevent UI flicker</li>
+                    <li>Implemented multi-level DOM cleaning to remove suffix from search box, suggestions, titles, and URLs</li>
+                    <li>Designed robust pattern matching system to identify AI overviews across different Google page layouts and languages</li>
+                    <li>Built periodic sync mechanism to balance real-time tracking with API rate limits</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <p>
+                    Empowers users with choice and control over their search experience, addressing growing concerns about AI-generated 
+                    content in search results. Provides a practical, performant solution for users who prefer traditional search results.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for PNGTuber -->
+    <div id="pngtuber-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('pngtuber')">&times;</button>
+            <h2 class="modal-title">Lightweight PNGTuber</h2>
+            <div class="modal-links">
+                <a href="https://github.com/jin-yah/pngtuber" target="_blank" class="modal-link">View on GitHub →</a>
+            </div>
+            <div class="modal-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tkinter</span>
+                <span class="tech-tag">PIL/Pillow</span>
+                <span class="tech-tag">sounddevice</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">keyboard</span>
+            </div>
+            <div class="modal-body">
+                <h3>Overview</h3>
+                <p>
+                    A minimal PNGTuber application written in Python that displays a 2D animated character model with automatic blinking, 
+                    microphone-reactive mouth movement, and keyboard-controlled accessories and facial expressions. Designed for streamers 
+                    who want a lightweight, customizable virtual avatar without the overhead of full 3D VTuber software.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Real-Time Audio Reactivity:</strong> Mouth animation driven by live microphone input with configurable amplitude threshold detection</li>
+                    <li><strong>Automatic Blinking:</strong> Natural eye-blinking animation with 4-second intervals and 250ms blink duration</li>
+                    <li><strong>Keyboard Controls:</strong> F1 cycles through accessories, F2 switches facial expressions, any other key triggers arm-raising animation</li>
+                    <li><strong>Modular Asset System:</strong> Support for swappable base model, mouth states, eye states, arm poses, accessories, and face overlays</li>
+                    <li><strong>Chroma Key Ready:</strong> Green screen background (#12ff06) for easy streaming integration with OBS or similar software</li>
+                    <li><strong>Error Logging:</strong> Comprehensive exception handling with automatic error logging to error_log.txt</li>
+                </ul>
+
+                <h3>Technical Implementation</h3>
+                <ul>
+                    <li><strong>Tkinter Canvas Architecture:</strong> Multi-layer canvas rendering system with z-index ordering for base, accessories, face overlays, mouth, eyes, and arms</li>
+                    <li><strong>Real-Time Audio Processing:</strong> sounddevice InputStream callback with NumPy-based amplitude analysis; detects audio levels above 0.10 threshold with 250ms mouth-close delay</li>
+                    <li><strong>Event-Driven Animation:</strong> Tkinter's after() method for non-blocking animation loops; 4-second blink cycle with 250ms closed-eye duration</li>
+                    <li><strong>Global Keyboard Hook:</strong> keyboard library integration for system-wide hotkey detection without window focus requirements</li>
+                    <li><strong>Dynamic Asset Loading:</strong> PIL/Pillow-based image preloading with ImageTk.PhotoImage caching; automatic directory scanning for accessories and face states</li>
+                    <li><strong>Transparent Placeholder System:</strong> !nothing.png convention for hiding layers; auto-generates 1x1 transparent PNGs if missing</li>
+                    <li><strong>State Management:</strong> Global state tracking for accessory/face indices, arm animation timing, mouth closure timing, and key press status</li>
+                </ul>
+
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Implemented smooth audio-reactive mouth animation using NumPy's max absolute value calculation on audio buffers</li>
+                    <li>Engineered multi-layer canvas rendering with conditional visibility toggling based on state and audio input</li>
+                    <li>Built modular asset system supporting hot-swappable PNG layers for complete character customization</li>
+                    <li>Designed graceful shutdown handling with microphone stream cleanup and keyboard unhooking via WM_DELETE_WINDOW protocol</li>
+                    <li>Created VBScript launcher (Run_Vtuber.vbs) for silent background execution without console window</li>
+                </ul>
+
+                <h3>Architecture & Design</h3>
+                <ul>
+                    <li><strong>Layer System:</strong> 7-layer rendering stack (base → accessories → face → mouth → eyes → arm_down/arm_up) with independent visibility control</li>
+                    <li><strong>Asset Organization:</strong> Structured file system with model/ directory containing base images and subdirectories for accessories/ and face_states/</li>
+                    <li><strong>Performance Optimization:</strong> Image preloading and caching eliminates runtime I/O overhead; lightweight Tkinter keeps CPU usage minimal</li>
+                    <li><strong>Extensibility:</strong> Drop-in asset support—add new accessories or faces by placing PNG files in respective directories</li>
+                </ul>
+
+                <h3>Use Cases</h3>
+                <ul>
+                    <li>Live streaming with OBS chroma key integration for webcam replacement</li>
+                    <li>Virtual meetings and online presentations with animated avatar</li>
+                    <li>Content creation for YouTube, Twitch, or other platforms</li>
+                    <li>Educational tool for demonstrating real-time audio processing and GUI development</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <p>
+                    Provides a lightweight, accessible alternative to resource-intensive VTuber software. Enables creators with minimal 
+                    technical knowledge to create custom animated avatars using simple PNG assets. Demonstrates practical application of 
+                    real-time audio processing, event-driven programming, and multi-threaded GUI development in Python.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for SleePi-Panda -->
+    <div id="sleepi-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('sleepi')">&times;</button>
+            <h2 class="modal-title">SleePi-Panda</h2>
+            <div class="modal-links">
+                <a href="https://github.com/Jin-yah/SleePi-Panda" target="_blank" class="modal-link">View on GitHub →</a>
+            </div>
+            <div class="modal-tech">
+                <span class="tech-tag">CircuitPython</span>
+                <span class="tech-tag">MicroPython</span>
+                <span class="tech-tag">Raspberry Pi Pico W</span>
+                <span class="tech-tag">USB HID</span>
+                <span class="tech-tag">WiFi</span>
+                <span class="tech-tag">HTML/CSS</span>
+            </div>
+            <div class="modal-body">
+                <h3>Overview</h3>
+                <p>
+                    An IoT device project for the Raspberry Pi Pico W that keeps computers in an active state by periodically sending 
+                    F13 key inputs via USB HID. Features a charming web interface with an interactive sleepy panda that users can toggle 
+                    between awake and asleep states, providing a playful solution to prevent computers from entering sleep mode.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>USB HID Keyboard Emulation:</strong> Sends F13 key presses every 10 seconds to maintain computer activity without interfering with normal use</li>
+                    <li><strong>Web Interface:</strong> Hosts a local HTTP server on the Pico W for wireless control from any device on the same network</li>
+                    <li><strong>Interactive Panda UI:</strong> Custom HTML/CSS interface featuring an animated panda that transitions between awake and sleeping states</li>
+                    <li><strong>Toggle & Kill Controls:</strong> Web-based buttons to enable/disable the keep-awake function or completely stop the script</li>
+                    <li><strong>Fallback Mode:</strong> Runs a simplified version without WiFi if network credentials aren't configured</li>
+                    <li><strong>LED Status Indicator:</strong> Onboard LED reflects the current toggle state for visual feedback</li>
+                </ul>
+
+                <h3>Technical Implementation</h3>
+                <ul>
+                    <li><strong>USB HID Protocol:</strong> Utilized CircuitPython's adafruit_hid library to emulate keyboard input; implemented custom F13 keycode (0x68) for non-intrusive wake commands</li>
+                    <li><strong>HTTP Server:</strong> Built lightweight web server using socketpool with socket reuse (SO_REUSEADDR) and 1-second timeout for responsive request handling</li>
+                    <li><strong>WiFi Integration:</strong> Automatic connection to configured network using wifi.radio API; prints IP address to boot_out.txt for easy discovery</li>
+                    <li><strong>Request Routing:</strong> Manual HTTP request parsing with POST endpoint handling for /on, /off, and /stop routes</li>
+                    <li><strong>Dual-Mode Operation:</strong> Intelligent startup sequence checks for WiFi credentials and switches between server_run() and run_backup() modes</li>
+                    <li><strong>State Management:</strong> Global variables track toggle state, LED status, and last keypress timestamp with 10-second interval enforcement</li>
+                    <li><strong>Template System:</strong> Separate HTML files (html_on.html, html_off.html) loaded from filesystem and served based on current state</li>
+                </ul>
+
+                <h3>Technical Highlights</h3>
+                <ul>
+                    <li>Implemented low-level socket programming with recv_into() for efficient buffer management on constrained hardware</li>
+                    <li>Designed graceful key release pattern (press → 100ms delay → release) to ensure proper HID event recognition</li>
+                    <li>Built responsive event loop balancing HTTP request handling and periodic keypress timing with time.monotonic() tracking</li>
+                    <li>Created custom CSS animations for panda sleep/wake transitions with color palette theming</li>
+                    <li>Engineered fallback mechanism ensuring device functionality even without network connectivity</li>
+                </ul>
+
+                <h3>Hardware & Software Stack</h3>
+                <ul>
+                    <li><strong>Hardware:</strong> Raspberry Pi Pico W (RP2040 dual-core ARM Cortex-M0+ @ 133MHz with WiFi)</li>
+                    <li><strong>Firmware:</strong> CircuitPython runtime for Python-on-microcontroller development</li>
+                    <li><strong>Libraries:</strong> adafruit_hid (keyboard emulation), adafruit_requests (HTTP), socketpool (networking)</li>
+                    <li><strong>Interface:</strong> USB for HID and power, WiFi for web interface hosting</li>
+                </ul>
+
+                <h3>Architecture & Design</h3>
+                <ul>
+                    <li><strong>Event Loop:</strong> Main loop handles incoming HTTP connections with non-blocking socket accepts and timeout-based key timing</li>
+                    <li><strong>State Synchronization:</strong> LED toggling mirrors web interface state for physical feedback</li>
+                    <li><strong>Resource Management:</strong> Proper socket closing after each request prevents memory leaks on constrained hardware</li>
+                    <li><strong>Boot Sequence:</strong> 30-second startup delay ensures host computer is ready before HID initialization</li>
+                </ul>
+
+                <h3>Use Cases</h3>
+                <ul>
+                    <li>Preventing computers from auto-sleeping during long downloads or rendering tasks</li>
+                    <li>Maintaining active status for remote desktop sessions</li>
+                    <li>Keeping presentation systems awake during conferences</li>
+                    <li>Development environments requiring continuous uptime</li>
+                    <li>Educational tool for learning embedded systems, USB HID, and web servers on microcontrollers</li>
+                </ul>
+
+                <h3>Impact</h3>
+                <p>
+                    Demonstrates practical embedded systems development with a focus on user experience. Combines low-level USB HID protocols 
+                    with modern web technologies to create an accessible, network-controlled hardware solution. Showcases the versatility of 
+                    CircuitPython for rapid prototyping of IoT devices with both hardware and web interfaces.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
