@@ -176,7 +176,7 @@
             <div class="projects-deck">
                 <div class="project-card" data-project="exersight">
                     <div class="project-header">
-                        <h3 class="project-title">ExerSight - AR Visual Acuity Trainer</h3>
+                        <h3 class="project-title">ExerSight - AR Visual Acuity Assessment App</h3>
                         <span class="project-link-badge">Live on App Store</span>
                     </div>
                     <div class="project-tech">
@@ -185,9 +185,10 @@
                         <span class="tech-tag">SceneKit</span>
                         <span class="tech-tag">CoreData</span>
                         <span class="tech-tag">StoreKit 2</span>
+                        <span class="tech-tag">UIKit</span>
                     </div>
                     <p class="project-summary">
-                        Native iOS app transforming eye examinations into AR-powered mini-games for optometry professionals with scientifically-calibrated game modes.
+                        Native iOS application transforming eye examinations into engaging AR-powered mini-games for optometry professionals. Features three scientifically-calibrated game modes assessing visual acuity, depth perception, and reaction times with premium subscription monetization.
                     </p>
                     <button class="learn-more-btn" onclick="openModal('exersight')">Learn More</button>
                 </div>
@@ -278,7 +279,7 @@
     <div id="exersight-modal" class="modal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal('exersight')">&times;</button>
-            <h2 class="modal-title">ExerSight - AR Visual Acuity Trainer</h2>
+            <h2 class="modal-title">ExerSight - AR-Based Visual Acuity Assessment Application</h2>
             <div class="modal-links">
                 <a href="https://apps.apple.com/pl/app/exersight/id1626914472" target="_blank" class="modal-link">View on App Store →</a>
             </div>
@@ -289,36 +290,80 @@
                 <span class="tech-tag">CoreData</span>
                 <span class="tech-tag">StoreKit 2</span>
                 <span class="tech-tag">UIKit</span>
+                <span class="tech-tag">Physics</span>
+                <span class="tech-tag">Protocol-Oriented Design</span>
             </div>
             <div class="modal-body">
                 <h3>Overview</h3>
                 <p>
-                    Developed a native iOS application that transforms traditional eye examinations into engaging AR-powered mini-games 
-                    designed for optometry professionals. The app features scientifically-calibrated game modes using SceneKit with 
-                    physics-based mechanics to assess visual acuity, depth perception, and reaction times.
+                    Native iOS application that transforms traditional eye examinations into engaging AR-powered mini-games. Designed for optometry professionals to assess patient visual acuity, hand-eye coordination, and reaction times through three scientifically-calibrated interactive experiences.
                 </p>
+
+                <h3>Core Game Modes</h3>
+                <ul>
+                    <li><strong>Ball Catch:</strong> 3D game measuring depth perception and catching accuracy with physics-based ball trajectories and collision detection</li>
+                    <li><strong>Ball Find:</strong> Visual search assessment testing pattern recognition and target identification speed across varying difficulty levels</li>
+                    <li><strong>Ball Deflect:</strong> Reaction time and peripheral vision evaluation through interactive object deflection mechanics</li>
+                </ul>
 
                 <h3>Key Features</h3>
                 <ul>
-                    <li><strong>AR-Powered Games:</strong> 3 scientifically-calibrated game modes built with SceneKit featuring physics-based mechanics for comprehensive visual assessment</li>
-                    <li><strong>Performance Tracking:</strong> CoreData-powered system tracking best times across difficulty levels with professional email reporting for patient assessment</li>
-                    <li><strong>Offline-First Premium:</strong> StoreKit 2 subscription system with local receipt validation for reliable offline access</li>
-                    <li><strong>Optimized Rendering:</strong> 60fps 3D performance on older iPhone models with complex scene graphs and particle systems</li>
+                    <li><strong>Performance Tracking:</strong> CoreData-powered score persistence with best time records across three difficulty levels (Easy, Medium, Hard)</li>
+                    <li><strong>Assessment Reporting:</strong> Professional email reporting system with formatted patient results and timestamps for clinical documentation</li>
+                    <li><strong>Premium Monetization:</strong> Time-limited subscription model with 1-month and 3-month tiers integrated via StoreKit 2</li>
+                    <li><strong>Offline Support:</strong> Local receipt validation enabling premium access without internet connectivity after initial purchase</li>
+                    <li><strong>AR Rendering:</strong> Immersive SceneKit 3D environments with custom scene files for each game mode</li>
+                    <li><strong>Optimized Performance:</strong> 60fps 3D rendering on older iPhone models with complex scene graphs and particle systems</li>
                 </ul>
 
-                <h3>Technical Highlights</h3>
+                <h3>Technical Architecture</h3>
                 <ul>
-                    <li>Implemented modular Swift architecture with protocol-oriented design and MVC pattern across 33 Swift files</li>
-                    <li>Created 5 custom SceneKit scenes with advanced AR transformations and cross-thread synchronization</li>
-                    <li>Developed 15+ custom UI components with smooth animations using CALayer</li>
-                    <li>Engineered comprehensive data model with local persistence and email export functionality</li>
+                    <li><strong>AR Rendering:</strong> SceneKit 3D environments with custom `.scn` scene files for each game mode; physics engine for realistic ball trajectories and collisions</li>
+                    <li><strong>Game Logic:</strong> Modular Swift classes inheriting from base `GameLogic` class with specialized implementations for each mini-game; clean separation between game mechanics and UI</li>
+                    <li><strong>Data Persistence:</strong> CoreData for score storage with relationship modeling; UserDefaults for app preferences and trial limits</li>
+                    <li><strong>View Layer:</strong> Custom UIView subclasses with delegate protocols for clean separation of concerns; advanced Auto Layout for responsive design</li>
+                    <li><strong>Asset Management:</strong> Xcode asset catalogs with organized image sets and 3D scene assets in `art.scnassets/` directory</li>
+                </ul>
+
+                <h3>Development Challenges Solved</h3>
+                <ul>
+                    <li>Synchronized 3D rendering with main thread UI updates to avoid SceneKit threading conflicts while maintaining frame rate</li>
+                    <li>Implemented offline-first premium access system with graceful degradation when App Store is unreachable</li>
+                    <li>Optimized 3D scene performance for older iPhone models while maintaining visual quality and scientific accuracy</li>
+                    <li>Created intuitive AR onboarding with instructional animations demonstrating game mechanics to users</li>
+                    <li>Designed difficulty progression system balancing accessibility for patients with varying abilities</li>
+                </ul>
+
+                <h3>Project Metrics</h3>
+                <ul>
+                    <li><strong>33 Swift files</strong> totaling comprehensive iOS application architecture</li>
+                    <li><strong>5 custom SceneKit scenes</strong> with detailed 3D environments and interactive elements</li>
+                    <li><strong>3 complete game modes</strong> with multiple difficulty tiers and scoring algorithms</li>
+                    <li><strong>15+ custom UI components</strong> for game overlays, menus, and results presentation</li>
+                    <li><strong>Comprehensive asset library</strong> including 2D graphics, 3D models, and custom fonts for cohesive branding</li>
+                </ul>
+
+                <h3>Platform Requirements</h3>
+                <ul>
+                    <li>iOS 15.0+</li>
+                    <li>ARKit-compatible devices (iPhone 6s and newer)</li>
+                    <li>Camera access for AR features</li>
+                    <li>Optional: StoreKit for in-app purchases and premium features</li>
+                </ul>
+
+                <h3>Skills Demonstrated</h3>
+                <ul>
+                    <li><strong>iOS Development:</strong> Advanced Swift programming with protocol-oriented design, UIKit custom view development, Auto Layout</li>
+                    <li><strong>3D Graphics & AR:</strong> SceneKit scene graph management, ARKit world tracking, physics simulation, particle systems</li>
+                    <li><strong>Data & Persistence:</strong> CoreData modeling, UserDefaults, file I/O for cache management</li>
+                    <li><strong>Monetization:</strong> StoreKit 2 subscription implementation, product catalog management, transaction verification</li>
+                    <li><strong>Software Architecture:</strong> MVC and delegate patterns, protocol-oriented programming, separation of concerns, modular game logic</li>
+                    <li><strong>Performance Optimization:</strong> Cross-thread communication, offline-first architecture, mobile 3D rendering optimization</li>
                 </ul>
 
                 <h3>Impact</h3>
                 <p>
-                    Delivered a complete production app that bridges the gap between clinical eye examinations and engaging 
-                    gamification, providing optometry professionals with a modern tool for patient assessment while maintaining 
-                    scientific accuracy and optimal performance.
+                    Provides optometry professionals with a modern, engaging tool for patient assessment that improves test compliance and data accuracy compared to traditional chart-based methods. The gamified approach reduces patient anxiety and increases participation, particularly with younger patients. Demonstrates production-ready iOS development with complex 3D graphics, monetization systems, and offline-first architecture.
                 </p>
             </div>
         </div>
